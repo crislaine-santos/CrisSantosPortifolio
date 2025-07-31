@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Lato');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --white: #fff;
+    --dark1: #0A0A0A ;    
+    --dark2: #292c38;    
+    --dark4: #bcbcc2; 
+    --dark5: #E0E0E0;  
+    --dark6: #1C1C1E; 
+    --roxo1: #A259FF; 
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark1);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark2);
+}
+
+body{
+    background-color:  var(--dark1);
+    background-size: 400%;
+    height: 100vh;
+    font-family: "Lato";
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem; /*espaçamento*/
+    flex-wrap: wrap; /*para responsividade*/
+    padding: .8rem;
+    background-color:  var(--dark6);
+    min-height: 50px;
+}
+.box-img-header{
+    height: 100%;
+}
+
+.img-logo{
+    height: 100%;
+    max-height: 60px;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.nav-links{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.nav-links:hover{
+    color: var(--dark4)  
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem; 
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px; 
+    
+}
+
+.first-section > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+h1{
+    font-family: "Google Sans Code";
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: 8px;
+}
+
+strong{
+    color: var(--roxo1);
+}
+
+.first-section p{
+    color: var(--white);
+}
+
+.box-img-main{
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-profile{
+    border-radius: 50%;
+    width: 100%;
+}
+
+:is(.second-section,.fourth-section){
+    background-color: var(--dark6);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.second-section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.second-section p{
+    color: var(--dark5);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.title{
+    color: var(--dark4);
+}
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.third-section > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.third-section > div img{
+    width: 250px;
+    border-radius: 10%;
+}
+
+.third-section > div p{
+    width: 600px;
+    color: var(--white);
+    text-align: justify;
+}
+
+footer{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+h3{
+    color: var(--white);
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+#My-projects-list{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#My-projects-list a{
+    text-decoration: none;
+    color: var(--dark5);
+}
+
+#My-projects-list a:hover{
+    color: var(--dark5);
+    transition: .4s;
+    cursor: pointer;
+}
+
+:is(.img-profile,.img-who-am-i){
+    box-shadow: 1px 1px 1px 1px var(--roxo1);
+}
