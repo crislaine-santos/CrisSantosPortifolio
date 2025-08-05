@@ -99,7 +99,7 @@ section{
 
 h1{
     font-family: "Google Sans Code";
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--white);
     letter-spacing: 5px;
 }
@@ -113,8 +113,7 @@ strong{
 }
 
 .box-img-main{
-    max-width: 450px;
-    padding: 1rem;
+    max-width: 450px; 
 }
 
 .img-profile{
